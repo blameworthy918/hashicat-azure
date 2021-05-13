@@ -8,8 +8,8 @@ resource "azurerm_resource_group" "myresourcegroup" {
 
   tags = {
     environment = "Production"
-    Department = "Devops"
-    Billable = "true"
+    department = "devops"
+    billable = "true"
   }
 }
 
