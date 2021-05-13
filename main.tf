@@ -8,8 +8,8 @@ resource "azurerm_resource_group" "myresourcegroup" {
 
   tags = {
     environment = "Production"
-    Department = "Devops"
-    Billable = "true"
+    department = "devops"
+    billable = "true"
   }
 }
 
@@ -126,8 +126,9 @@ resource "azurerm_virtual_machine" "catapp" {
 
   tags = {
     environment = "Production"
-    department = "Devops"
+    department = "devops"
     billable = "true"
+    }
 }
 
 # We're using a little trick here so we can run the provisioner without
