@@ -2,6 +2,17 @@ provider "azurerm" {
   version = "=1.44.0"
 }
 
+variable "prefix" {
+  type = string
+  default = "blame"
+}
+
+variable "location" {
+  type = string
+  default = "eastus"
+}
+
+
 resource "azurerm_resource_group" "myresourcegroup" {
   name     = "${var.prefix}-workshop"
   location = var.location
